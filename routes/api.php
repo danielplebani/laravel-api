@@ -3,6 +3,9 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\ProjectController;
+use App\Http\Controllers\Api\TechnologyController;
+use App\Http\Controllers\Api\TypeController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -21,3 +24,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::get('projects', [ProjectController::class, 'index'])->name('api.projects');
 
+Route::get('projects/{project:id}', [ProjectController::class, 'show']);
