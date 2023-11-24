@@ -13,7 +13,7 @@ class TypeSeeder extends Seeder
      */
     public function run(): void
     {
-        $types = ['Website', 'Software', 'Back-end', 'Documentation'];
+        $types = ['Website', 'Software', 'Back-end', 'Documentation' , 'Website'];
 
         foreach ($types as $type) {
             $new_type = new Type();
